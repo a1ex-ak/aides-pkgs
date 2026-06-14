@@ -4,14 +4,14 @@ name=chromium-gost
 version=148.0.7778.216
 release=1
 group="Networking/WWW"
-summary="The popular web browser by Google (Stable Channel)"
+summary="Chromium with GOST support from the official site (Stable Channel)"
 architectures=('amd64')
-homepage="https://www.google.com/chrome"
-maintainer="Maxim Slipenko <maks1ms@alt-gnome.ru>"
+homepage="https://github.com/deemru/chromium-gost/"
+maintainer="Alexey Kamaev <a1exak@outlook.com>"
 license=('Multiple, see https://chrome.google.com/')
 appstream_app_id='Chromium-Gost'
 nonfree=1
-nonfree_url="https://www.google.com/chrome/terms/"
+nonfree_url="https://github.com/deemru/chromium-gost/"
 
 _channel=stable
 
@@ -54,9 +54,9 @@ package() {
 
 	# Fix the Chrome desktop entry
 	sed -i \
-		-e "/Exec=/i\StartupWMClass=Google-chrome" \
+		-e "/Exec=/i\StartupWMClass=Chromium-Gost" \
 		-e "s/x-scheme-handler\/ftp;\?//g" \
-		"$pkgdir"/usr/share/applications/com.google.Chrome.desktop
+		"$pkgdir"/usr/share/applications/chromium-gost.desktop
 
 	# Remove the Debian Cron job, duplicate product logos and menu directory
 	rm -r \
