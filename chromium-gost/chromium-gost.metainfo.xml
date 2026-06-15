@@ -4,11 +4,11 @@
   <id>Chromium-Gost/id>
   <launchable type="desktop-id">chromium-gost.desktop</launchable>
   <name>Chromium-Gost</name>
-  <developer id="com.google">
-    <name>Google</name>
+  <developer id="chromium">
+    <name>Chromium</name>
   </developer>
   <summary>The browser built to be yours</summary>
-  <summary xml:lang="ru">Браузер, созданный для вас</summary>
+  <summary xml:lang="ru">Браузер, с поддержкой криптографических алгоритмов ГОСТ</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LicenseRef-proprietary</project_license>
   <url type="homepage">https://chrome.google.com/</url>
